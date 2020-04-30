@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=dvice-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>portfolioの作成
+        </title>
+        <style type="text/css"> 
+        html{
+            scroll-behavior: smooth;
+        }
+        nav {
+            position: absolute;
+            background: #ccc;
+            padding: 20px;
+            scroll-behavior: smooth;
+            width: 250px;
+            top: 650px;
+            left: 550px;
+            right: 600px;
+            font-size: 25px;
+            text-align: center;
+        }
+        body{
+            padding: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;}
+        h1{margin: 5px;
+        }
+        div.header{
+          background-image: url("gazou/pc.jpeg") ;
+          height: 550px;
+          width: 100%x;
+
+         }
+        div.title{
+          line-height: 500px;
+            font-size: 70px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            font-family: Comic Sans MS;
+            text-decoration: underline;
+        }
+        /* div.menu{
+            position: absolute;
+            margin: 30px auto;
+            padding: 5px;
+            width: 250px;
+            border:solid gray;
+            background-color: white;
+            color: blue;
+            left: 600px;
+            right: 600px;
+            text-align: center; */
+            
+
+            
+            
+        }
+        span{
+            color: black;
+        }
+        div.profile{
+            position: absolute;
+            margin: 10px auto;
+            padding: 5px;
+            width: 500px;
+            height: 600px;
+            background-color: darkorange;
+            top: 950px;
+            left: 50px;
+            right: 800px;
+
+        }
+        div.skill{
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            padding: 5px;
+            margin: 10px auto;
+            top: 1650px;
+            background-color: orange;
+            left: 800px;
+            right: 50px;
+
+        }
+        div.story{
+            position: absolute;
+            margin: 10px auto;
+            padding: 5px;
+            width: 500px;
+            height: 400px;
+            background-color: darkorange;
+            top: 2250px;
+            left: 50px;
+            right: 800px;
+            
+
+        }
+        h3,h4,h5{
+            font-size: 30px;
+            font-family: Comic Sans MS;
+            text-align: center;
+            
+        }
+        p.right {text-align: right}
+        p.item {font-size: 20px;}
+        
+        /* .efect-fade {
+            opacity: 0;
+            transform: translate(0,45px);
+            transition: all 300ms;
+         }
+         .efect-fade.effect-scroll {
+            opacity: 1;
+            transform: translate(0,0); 
+        }
+        div.efect-fade {
+            margin-top: 0.5rem;
+            padding: 1rem;
+            background-color: #e3e6e9;
+            border: 1px dotted #000;
+        } */
+
+        /* .fadein {
+            transition: 1s;
+            opacity: 0;
+        }
+
+        .box.fadein.animated {
+            opacity: 1;
+        } */
+        
+
+        </style>
+     </head>
+        <body>
+            <nav>MENU<br/><br/><a href="#a">プロフィール</a><br/><a href="#b">スキル</a><br/><a href="#c">自己紹介</a></nav>
+            <h1>自己紹介サイト
+            </h1>
+        　　 <div class="header">
+               <div class="title">Shun Yokoyama</div>
+            </div>
+            
+
+         <div class = "box fadein">  
+            <div class="profile" id="a">
+            <h3>PROFILE</h3>
+            <p class="item">BIRTHDAY</p>
+            <p class="right">1999/05/24(20歳)</p>
+            <br/><br/>
+            <p class="item">ADDLESS</p>
+            <p class="right">千葉県松戸市</p>
+             <br/><br/>
+             <p class="item">HOBBY</p>
+             <p class="right">音楽,野球観戦,ゲーム</p>
+             <br/><br/>
+             <p class="item">TEL</p>
+             <p class="right">080-1200-6497</p>
+            </div>
+        </div>
+         <div class="box fadein">
+             <div class="skill" id="b"><h4>SKILL</h4>
+                <p class="item">言語</p>
+                <p class="right">HTML,CCS,JavaScript,PHP,SQL</p>
+                <br/><br/>
+                <p class="item">ツール</p>
+                <p class="right">Git</p>
+                <br/><br/>
+                <p class="item">OS</p>
+                <p class="right">Linux,Windows</p>
+            </div>
+        </div>
+         <div class="box fadein">
+            <div class="story" id="c">
+                <h5>MY STORY</h5>
+                <p>こんにちは。横山　駿と申します。</p>
+
+                  <p> 文系の専門学校を卒業後、プログラミング未経験でITエンジニア系の会社へ入社。
+                      会社内の技術研修で学習開始。
+                    HTML/CSS、JavaScriptなどの言語を学習。<br/>
+                    これから、幅広く対応できる適応力のあるネットワークエンジニアへとなれるよう学習を続けている。
+                </p>
+            </div>
+        </div>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+                'use strict';
+        //         $(function(){
+        //             $(window).scroll(function (){
+        //                 $('.effect-fade').each(function(){
+        //                     var elempos = $(this).offset().top;
+        //                     var scroll = $(window).scrollTop();
+        //                     var windowHeight = $(window).height();
+        //                     if (scroll > elempos - windowHeight) {
+        //                         $(this).addClass('effect-scroll');
+        //                     }
+        //             } );
+        //         });
+        //     });
+         
+        //    const  div = document.querySelector('effect-fade')
+        //    div.animate({
+        //        opacity: [0,1]
+        //    },1500);
+
+            $(window).on('load scroll',function (){
+
+                var box = $('.fadein');
+                var animated = 'animated';
+
+                box.each(function(){
+
+                    var boxOffset = $(this).offset().top;
+                    var scrollPos = $(window).scrollTop();
+                    var wh = $(window).height();
+
+                    if(scrollPos > boxOffset - wh + 100){
+                        $(this).addClass(animated);
+                    }
+                });
+            });
+             
+            </script>
+
+
+
+        </body>
+</html>

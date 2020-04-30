@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=dvice-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>portfolioの作成
+        </title>
+        <style>
+        .js-animation {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(40px);
+            transition: all 1s;
+        }
+        .js-animation.is-show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0px);
+        }
+        </style>
+    </head>
+    <body>
+        <div class="element js-animation"><img src="./gazou/pc.jpeg" alt="画像１">  </div>
+   
+    <script>
+        'use strict'
+        
+        function showElementAnimation() {
+
+            var element = document.getElementsByClassName('js-animation');
+            if(!element) return;
+
+            var showTiming =window.innerHeight >768 ? 200 : 40;
+            var scrolly =window.pageYOffset;
+            var window = window.innerHeight;
+
+            for(var i=0;i<element.length;i++) { var elemClientRect = element[i].getBoundingClientRect(); var elemY =scrollY + elebClientRect.top; if(scrollY + windowH - showTiming > elemY) {
+                element[i].classList.add('is=show');
+            } else if(scrollY + windowH < elemY) {
+                element[i].classList.remove('is-show');
+            }
+            }
+        }
+        shuwElementAnimation();
+        window.addEventListener('scroll', showElementAnimation);
+
+    </script>
+    </body>
+</html>

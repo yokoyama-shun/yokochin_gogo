@@ -1,0 +1,33 @@
+p.sub-title1{color : aquamarine}
+h1{color: blueviolet}
+
+p#sub-title2{color: chartreuse}
+.campany{color: darkblue;
+font-size: x-large;}
+div.box1{height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 50% 0% 50% 50%;
+    position: absolute;
+    right:0px;
+    left:0px ;
+    top:1000px ;
+    background-color: green;
+margin: 5px ;}
+div.box2{height: 100px;
+    width: 100px;
+    background-color: green;
+    position: absolute;
+    right: 0px;
+    left: 100px;
+    top: 1000px;
+    margin: 0px;
+    border-radius: 0% 50% 50% 50%;
+
+text-align: center;}
+div.box3{height: 100px;
+    width: 100px;
+    background-color: #776655;
+text-align: center;}
+
+margin: ;}
